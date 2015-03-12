@@ -11,13 +11,14 @@
 6. Add `index.html` and `main.es6`. Add `import 'zone.js';` to main.
 7. Run `live-server` and observe the results.
 
-### Or just clone this repo.
+*Or just clone this repo.*
 
-## Bundle project -> build.js 
-Run: `jspm bundle-sfx --minify proj/main`
+
+### Bundle project -> build.js 
+Run `jspm bundle-sfx --minify proj/main`
 then switch the DEV and PROD scripts on index.html
 
-## Usefull links
+### Links
 - [Angular 2 hello world](https://github.com/angular/angular/tree/master/modules/examples/src/hello_world)
 - [Angular 2 TODO](https://github.com/davideast/ng2do)
 - [jspm](https://github.com/jspm/jspm-cli/)
