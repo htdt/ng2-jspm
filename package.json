@@ -1,0 +1,11 @@
+{
+  "jspm": {
+    "directories": {
+      "lib": "proj",
+      "packages": "jspm_packages"
+    },
+    "dependencies": {
+      "zone.js": "npm:zone.js@^0.4.1"
+    }
+  }
+}

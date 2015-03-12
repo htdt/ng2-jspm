@@ -1,0 +1,32 @@
+{
+  "name": "zone.js",
+  "version": "0.4.1",
+  "description": "Zones for JavaScript",
+  "main": "zone.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "serve": "python -m SimpleHTTPServer 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular/zone.js.git"
+  },
+  "author": "Brian Ford",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/angular/zone.js/issues"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-sauce-launcher": "^0.2.10",
+    "nodejs-websocket": "^1.2.0"
+  }
+}
