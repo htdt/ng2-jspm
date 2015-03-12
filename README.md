@@ -11,7 +11,7 @@
 6. Add `index.html` and `main.es6`. Add `import 'zone.js';` to main.
 7. Run `live-server` and observe the results.
 
-*Or just clone this repo.*
+*Or just clone this repo and jspm install.*
 
 
 ### Bundle project -> build.js 
@@ -25,4 +25,5 @@ then switch the DEV and PROD scripts on index.html
 - [SystemJS](https://github.com/systemjs/systemjs)
 - [Cool jspm demo](https://github.com/geelen/loopgifs)
 
-### MIT License
+
+MIT License
