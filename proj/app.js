@@ -29,10 +29,7 @@ class MyAppComponent {
 
     constructor(images: ImagesFactory) {
       this.name = "world";
-      
-      images.getUrls().then((ar) => {
-        this.img = ar[0];
-      });
+      images.getUrls().then(ar => this.img = ar[0]);
     }
 }
 
