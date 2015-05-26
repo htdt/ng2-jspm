@@ -1,17 +1,17 @@
 ## Run Angular 2 app with jspm
-0. `npm install -g jspm live-server`
-1. `jspm init`
-2. `jspm install npm:reflect-metadata npm:zone.js npm:angular2`
-3. Add to `config.js`
-```
-  "traceurOptions": {
-    "annotations": true,
-    "memberVariables": true,
-    "types": true
-  }
-```
-4. Copy `index.html` and `proj` folder.
-5. Run `live-server` and observe the results.
+0.  `npm install -g jspm live-server`
+1.  `jspm init`
+2.  `jspm install npm:reflect-metadata npm:zone.js npm:angular2`
+3.  Add to `config.js`
+    ```
+    "traceurOptions": {
+      "annotations": true,
+      "memberVariables": true,
+      "types": true
+    }
+    ```
+4.  Copy `index.html` and `proj` folder.
+5.  Run `live-server` and observe the results.
 
 
 ### Bundle project
