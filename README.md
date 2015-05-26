@@ -1,29 +1,32 @@
 ## Run Angular 2 app with jspm
 0. `npm install -g jspm live-server`
-1. Clone and build [Angular 2](https://github.com/angular/angular) -> result is in `dist` folder.
-2. Create project folder. Run `jspm init` for initial configuration.
-3. Copy `dist` from angular to `ng2dist` in project.
-4. `jspm install npm:zone.js` (used in angular globally).
-5. Add to `config.js`
- * angular2 and rtts_assert paths
- * traceur options
- * zone.js meta global
-6. Add `index.html` and `main.es6`. Add `import 'zone.js';` to main.
-7. Run `live-server` and observe the results.
+1. `jspm init`
+2. `jspm install npm:reflect-metadata npm:zone.js npm:angular2`
+3. Add to `config.js`
+```
+  "traceurOptions": {
+    "annotations": true,
+    "memberVariables": true,
+    "types": true
+  }
+```
+4. Copy `index.html` and `proj` folder.
+5. Run `live-server` and observe the results.
 
-*Or just clone this repo and jspm install.*
+
+### Bundle project
+`jspm bundle-sfx --minify reflect-metadata + zone.js + proj/app build/bundle.js`
 
 
-### Bundle project -> build.js 
-Run `jspm bundle-sfx --minify proj/main`
-then switch the DEV and PROD scripts on index.html
+### Hack
+`fetch()` is not triggering view update after data load and change.
+`jspm_packages/es6-module-loader.js` replacement with [es6-module-loader-sans-promises.js](https://github.com/ModuleLoader/es6-module-loader/blob/v0.16.6/dist/es6-module-loader-sans-promises.js)
+solves this problem.
 
-### Links
-- [Angular 2 hello world](https://github.com/angular/angular/tree/master/modules/examples/src/hello_world)
-- [Angular 2 TODO](https://github.com/davideast/ng2do)
-- [jspm](https://github.com/jspm/jspm-cli/)
-- [SystemJS](https://github.com/systemjs/systemjs)
-- [Cool jspm demo](https://github.com/geelen/loopgifs)
+### Other examples
+- [ng2-play](https://github.com/pkozlowski-opensource/ng2-play)
+- [angular2-webpack-starter](https://github.com/angular-class/angular2-webpack-starter)
+- [ngconf2015demo](https://github.com/Microsoft/ngconf2015demo)
 
 
 MIT License

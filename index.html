@@ -2,26 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>jspm <3 ng2</title>
+    <title>ng2 <3 jspm</title>
   </head>
   <body>
-    <hello-app>
-      Loading...
-    </hello-app>
+    <my-app></my-app>
 
     <!-- DEV MODE -->
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <script>
-      System.import('proj/main');
-    </script>
-
-    <!-- PRODUCTION MODE -->
-    <!-- to generate build.js, run: jspm bundle-sfx --minify proj/main -->
-    <!--
-    <script src="jspm_packages/traceur-runtime.js"></script>
-    <script src="build.js"></script>
-    -->
+      System.import('reflect-metadata')
+      .then(function(){System.import('zone.js')})
+      .then(function(){System.import('proj/app')});
+    </script>    
 
   </body>
 </html>
