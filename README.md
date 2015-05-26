@@ -18,10 +18,15 @@
 `jspm bundle-sfx --minify reflect-metadata + zone.js + proj/app build/bundle.js`
 
 
+### Demo
+[http://htdt.github.io/ng2-jspm/build/](http://htdt.github.io/ng2-jspm/build/)
+
+
 ### Hack
 `fetch()` is not triggering view update after data load and change.
 `jspm_packages/es6-module-loader.js` replacement with [es6-module-loader-sans-promises.js](https://github.com/ModuleLoader/es6-module-loader/blob/v0.16.6/dist/es6-module-loader-sans-promises.js)
 solves this problem.
+
 
 ### Other examples
 - [ng2-play](https://github.com/pkozlowski-opensource/ng2-play)
