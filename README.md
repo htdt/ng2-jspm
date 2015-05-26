@@ -13,6 +13,8 @@
 4.  Copy `index.html` and `proj` folder.
 5.  Run `live-server` and observe the results.
 
+*Or just clone this repo and `jspm install`.*
+
 
 ### Bundle project
 `jspm bundle-sfx --minify reflect-metadata + zone.js + proj/app build/bundle.js`
