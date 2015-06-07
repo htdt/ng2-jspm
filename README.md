@@ -3,15 +3,7 @@
 0.  `npm install -g jspm@beta live-server`
 1.  `jspm init` (transpiler: typescript)
 2.  `jspm install npm:reflect-metadata npm:zone.js npm:angular2`
-3.  
-    ```
-    "typescriptOptions": {
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true
-    },
-
-    ```
-    to `config.js`
+3.  `"typescriptOptions": {"emitDecoratorMetadata": true, "experimentalDecorators": true}` to `config.js`
 4.  Copy `index.html` and `proj` folder.
 5.  Run `live-server` and observe the results.
 
